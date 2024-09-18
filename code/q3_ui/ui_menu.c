@@ -96,7 +96,7 @@ void Main_MenuEvent (void* ptr, int event) {
 	}
 
 	switch( ((menucommon_s*)ptr)->id ) {
-		//******BRAWL******* remove all unnecessary gamemodes
+		//******CLEANMOD******* remove all unnecessary gamemodes
 	//case ID_SINGLEPLAYER:
 	//	UI_SPLevelMenu();
 	//	break;
@@ -279,7 +279,7 @@ void UI_MainMenu( void ) {
 		char	key[17];
 
 		trap_GetCDKey( key, sizeof(key) );
-		//*******BRAWL******* remove cd key check
+		//*******CLEANMOD******* remove cd key check
 		//if( trap_VerifyCDKey( key, NULL ) == qfalse ) { original code
 		if( trap_VerifyCDKey( key, NULL ) != qfalse ) {
 		//**********************
@@ -314,7 +314,7 @@ void UI_MainMenu( void ) {
 	s_main.menu.fullscreen = qtrue;
 	s_main.menu.wrapAround = qtrue;
 	s_main.menu.showlogo = qtrue;
-	//*****BRAWL****** remove unnecssary gamemodes
+	//*****CLEANMOD****** remove unnecssary gamemodes
 	y = 134;
 	/*s_main.singleplayer.generic.type		= MTYPE_PTEXT;
 	s_main.singleplayer.generic.flags		= QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
@@ -333,7 +333,7 @@ void UI_MainMenu( void ) {
 	s_main.multiplayer.generic.y			= y;
 	s_main.multiplayer.generic.id			= ID_MULTIPLAYER;
 	s_main.multiplayer.generic.callback		= Main_MenuEvent; 
-//*******BRAWL******* change multiplayer option to white and say brawl
+//*******CLEANMOD******* change multiplayer option to white and say brawl
 	//s_main.multiplayer.string				= "MULTIPLAYER"; original code
 	s_main.multiplayer.string				= "BRAWL";
 	//s_main.multiplayer.color				= color_red; original code
