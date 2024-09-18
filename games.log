@@ -1,0 +1,162 @@
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:03 Item: 0 weapon_rocketlauncher
+  0:07 ShutdownGame:
+  0:07 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:03 Item: 0 weapon_rocketlauncher
+  0:23 ShutdownGame:
+  0:23 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 Item: 0 weapon_rocketlauncher
+  0:08 ShutdownGame:
+  0:08 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:04 Item: 0 weapon_rocketlauncher
+  0:08 ShutdownGame:
+  0:08 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:04 Item: 0 weapon_rocketlauncher
+  0:13 ShutdownGame:
+  0:13 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientConnect: 1
+  0:01 ClientUserinfoChanged: 1 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientUserinfoChanged: 1 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientUserinfoChanged: 1 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientBegin: 1
+  0:39 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:44 ClientUserinfoChanged: 1 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:46 ShutdownGame:
+  0:46 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:03 Item: 0 weapon_rocketlauncher
+  0:08 Item: 0 weapon_rocketlauncher
+  0:09 ShutdownGame:
+  0:09 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:12 ShutdownGame:
+  0:12 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  1:31 ShutdownGame:
+  1:31 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:17 ShutdownGame:
+  0:17 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:04 ShutdownGame:
+  0:04 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:32 ShutdownGame:
+  0:32 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:13 ShutdownGame:
+  0:13 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ShutdownGame:
+  0:02 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:03 Item: 0 weapon_rocketlauncher
+  0:12 Item: 0 weapon_rocketlauncher
+  0:16 ShutdownGame:
+  0:16 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 Item: 0 weapon_rocketlauncher
+  0:04 Item: 0 ammo_bullets
+  0:12 Item: 0 item_armor_body
+  0:13 Item: 0 weapon_plasmagun
+  0:19 Item: 0 item_armor_shard
+  0:19 Item: 0 item_armor_shard
+  0:19 Item: 0 item_armor_shard
+  0:21 Item: 0 ammo_cells
+  0:26 Item: 0 item_armor_shard
+  0:26 Item: 0 item_armor_shard
+  0:26 Item: 0 item_armor_shard
+  0:32 Item: 0 weapon_rocketlauncher
+  0:37 Item: 0 item_health
+  0:41 Item: 0 weapon_rocketlauncher
+  0:47 Item: 0 item_health
+  0:48 Item: 0 item_health_large
+  0:55 Item: 0 weapon_plasmagun
+  0:57 Item: 0 ammo_bullets
+  0:58 ShutdownGame:
+  0:58 ------------------------------------------------------------
