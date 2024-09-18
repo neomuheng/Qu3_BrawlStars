@@ -935,8 +935,8 @@ void ClientThink_real( gentity_t *ent ) {
 	pm.pmove_msec = pmove_msec.integer;
 
 	VectorCopy( client->ps.origin, client->oldOrigin );
-	//********CLEANMOD******** change movement speed
-	client->ps.speed *= 5;
+	//********BRAWL******** change movement speed
+	//client->ps.speed *= 5;
 	//************************
 
 #ifdef MISSIONPACK
