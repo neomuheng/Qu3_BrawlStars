@@ -333,7 +333,7 @@ void UI_MainMenu( void ) {
 	s_main.multiplayer.generic.y			= y;
 	s_main.multiplayer.generic.id			= ID_MULTIPLAYER;
 	s_main.multiplayer.generic.callback		= Main_MenuEvent; 
-//*******CLEANMOD******* change multiplayer option to white and say brawl
+//*******BRAWL******* change multiplayer option to white and say brawl
 	//s_main.multiplayer.string				= "MULTIPLAYER"; original code
 	s_main.multiplayer.string				= "BRAWL";
 	//s_main.multiplayer.color				= color_red; original code
