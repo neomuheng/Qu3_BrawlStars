@@ -41,7 +41,7 @@ MAIN MENU
 #define ID_MODS					16
 #define ID_EXIT					17
 
-#define MAIN_BANNER_MODEL				"models/mapobjects/banner/banner5.md3"
+#define MAIN_BANNER_MODEL				"models/mapobjects/jesus/jesus.md3"
 #define MAIN_MENU_VERTICAL_SPACING		34
 
 

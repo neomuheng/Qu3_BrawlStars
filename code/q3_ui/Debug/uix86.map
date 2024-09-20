@@ -1,13 +1,13 @@
  uix86
 
- Timestamp is 66ed69d3 (Fri Sep 20 08:25:55 2024)
+ Timestamp is 66ed7659 (Fri Sep 20 09:19:21 2024)
 
  Preferred load address is 40000000
 
  Start         Length     Name                   Class
  0001:00000000 000549d7H .text                   CODE
  0001:000549d7 00026709H .textbss                CODE
- 0002:00000000 00007bebH .rdata                  DATA
+ 0002:00000000 00007becH .rdata                  DATA
  0002:00007bf0 00000167H .edata                  DATA
  0003:00000000 00000104H .CRT$XCA                DATA
  0003:00000104 00000104H .CRT$XCZ                DATA
@@ -436,8 +436,8 @@
  0001:000372f0       __toupper                  400382f0 f   LIBCMTD:toupper.obj
  0001:00037300       _toupper                   40038300 f   LIBCMTD:toupper.obj
  0001:000373a0       __toupper_lk               400383a0 f   LIBCMTD:toupper.obj
- 0001:000374d0       __chkstk                   400384d0 f   LIBCMTD:chkstk.obj
  0001:000374d0       __alloca_probe             400384d0 f   LIBCMTD:chkstk.obj
+ 0001:000374d0       __chkstk                   400384d0 f   LIBCMTD:chkstk.obj
  0001:00037500       _strcpy                    40038500 f   LIBCMTD:strcat.obj
  0001:00037510       _strcat                    40038510 f   LIBCMTD:strcat.obj
  0001:00037600       _strchr                    40038600 f   LIBCMTD:strchr.obj
@@ -1518,12 +1518,12 @@
  0002:00003500       ??_C@_0BB@DFEB@ui_ffa_timelimit?$AA@ 40080500     ui_main.obj
  0002:00003514       ??_C@_02GJDO@20?$AA@       40080514     ui_main.obj
  0002:00003518       ??_C@_0BB@GLAG@ui_ffa_fraglimit?$AA@ 40080518     ui_main.obj
- 0002:0000352c       ??_C@_0CF@OBIH@models?1mapobjects?1banner?1banner5@ 4008052c     ui_menu.obj
- 0002:00003558       ??_C@_0BB@CNGM@com_errorMessage?$AA@ 40080558     ui_menu.obj
- 0002:0000356c       ??_C@_04HPFN@EXIT?$AA@     4008056c     ui_menu.obj
- 0002:00003574       ??_C@_05CPNP@BRAWL?$AA@    40080574     ui_menu.obj
- 0002:0000357c       ??_C@_0O@NBEJ@sv_killserver?$AA@ 4008057c     ui_menu.obj
- 0002:0000358c       ??_C@_0CJ@FDGG@DEMO?5?5?5?5?5?5FOR?5MATURE?5AUDIENCES?5?5@ 4008058c     ui_menu.obj
+ 0002:0000352c       ??_C@_0CC@DFLA@models?1mapobjects?1jesus?1jesus?4md@ 4008052c     ui_menu.obj
+ 0002:00003554       ??_C@_0BB@CNGM@com_errorMessage?$AA@ 40080554     ui_menu.obj
+ 0002:00003568       ??_C@_04HPFN@EXIT?$AA@     40080568     ui_menu.obj
+ 0002:00003570       ??_C@_05CPNP@BRAWL?$AA@    40080570     ui_menu.obj
+ 0002:00003578       ??_C@_0O@NBEJ@sv_killserver?$AA@ 40080578     ui_menu.obj
+ 0002:00003588       ??_C@_0CJ@FDGG@DEMO?5?5?5?5?5?5FOR?5MATURE?5AUDIENCES?5?5@ 40080588     ui_menu.obj
  0002:000035c0       __real@8@4001a000000000000000 400805c0     ui_menu.obj
  0002:000035cc       __real@4@400b9c40000000000000 400805cc     ui_menu.obj
  0002:000035d0       __real@8@40039d80000000000000 400805d0     ui_menu.obj
