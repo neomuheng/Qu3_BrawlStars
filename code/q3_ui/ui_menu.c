@@ -337,7 +337,7 @@ void UI_MainMenu( void ) {
 	//s_main.multiplayer.string				= "MULTIPLAYER"; original code
 	s_main.multiplayer.string				= "BRAWL";
 	//s_main.multiplayer.color				= color_red; original code
-	s_main.multiplayer.color				= color_white;
+	s_main.multiplayer.color				= color_yellow;
 //**********************
 		s_main.multiplayer.style				= style;
 
