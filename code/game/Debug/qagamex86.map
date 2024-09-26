@@ -1,6 +1,6 @@
  qagamex86
 
- Timestamp is 66eae331 (Wed Sep 18 10:26:57 2024)
+ Timestamp is 66f2b097 (Tue Sep 24 08:29:11 2024)
 
  Preferred load address is 20000000
 
@@ -1009,8 +1009,8 @@
  0001:0005a494       _sin                       2005b494 f   LIBCMTD:sin.obj
  0001:0005a530       __CIcos                    2005b530 f   LIBCMTD:cos.obj
  0001:0005a544       _cos                       2005b544 f   LIBCMTD:cos.obj
- 0001:0005a5e0       __alloca_probe             2005b5e0 f   LIBCMTD:chkstk.obj
  0001:0005a5e0       __chkstk                   2005b5e0 f   LIBCMTD:chkstk.obj
+ 0001:0005a5e0       __alloca_probe             2005b5e0 f   LIBCMTD:chkstk.obj
  0001:0005a610       __tolower                  2005b610 f   LIBCMTD:tolower.obj
  0001:0005a620       _tolower                   2005b620 f   LIBCMTD:tolower.obj
  0001:0005a6c0       __tolower_lk               2005b6c0 f   LIBCMTD:tolower.obj
@@ -2532,7 +2532,7 @@
  0002:00005a24       ??_C@_0BB@IINK@g_maxGameClients?$AA@ 200b9a24     g_main.obj
  0002:00005a38       ??_C@_0L@BIFK@sv_mapname?$AA@ 200b9a38     g_main.obj
  0002:00005a48       ??_C@_0M@BGFJ@g_restarted?$AA@ 200b9a48     g_main.obj
- 0002:00005a58       ??_C@_0M@DBBO@Sep?518?52024?$AA@ 200b9a58     g_main.obj
+ 0002:00005a58       ??_C@_0M@LJCB@Sep?524?52024?$AA@ 200b9a58     g_main.obj
  0002:00005a68       ??_C@_08HGGM@gamedate?$AA@ 200b9a68     g_main.obj
  0002:00005a74       ??_C@_06EEGI@baseq3?$AA@   200b9a74     g_main.obj
  0002:00005a7c       ??_C@_08NPAP@gamename?$AA@ 200b9a7c     g_main.obj

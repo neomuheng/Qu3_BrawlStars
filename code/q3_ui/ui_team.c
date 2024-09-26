@@ -208,3 +208,4 @@ void UI_TeamMainMenu( void ) {
 	TeamMain_MenuInit();
 	UI_PushMenu ( &s_teammain.menu );
 }
+
