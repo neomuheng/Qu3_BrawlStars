@@ -252,6 +252,11 @@ typedef struct {
 	int			voteCount;			// to prevent people from constantly calling votes
 	int			teamVoteCount;		// to prevent people from constantly calling votes
 	qboolean	teamInfo;			// send team overlay updates?
+	//********BRAWL********define new data fields for player class and spawn times
+	pclass_t	playerclass;	   // The players current class
+    pclass_t	newplayerclass;	   // The class the player will become when it respawns
+	int			spawnTime;			//the current level.time that we spawn
+    //********-----********
 } clientPersistant_t;
 
 
@@ -523,6 +528,9 @@ void G_RunMissile( gentity_t *ent );
 gentity_t *fire_blaster (gentity_t *self, vec3_t start, vec3_t aimdir);
 gentity_t *fire_plasma (gentity_t *self, vec3_t start, vec3_t aimdir);
 gentity_t *fire_grenade (gentity_t *self, vec3_t start, vec3_t aimdir);
+//********BRAWL******** add cluster grenades
+gentity_t *fire_cgrenade (gentity_t *self, vec3_t start, vec3_t aimdir);
+//********-----********
 gentity_t *fire_rocket (gentity_t *self, vec3_t start, vec3_t dir);
 gentity_t *fire_bfg (gentity_t *self, vec3_t start, vec3_t dir);
 gentity_t *fire_grapple (gentity_t *self, vec3_t start, vec3_t dir);

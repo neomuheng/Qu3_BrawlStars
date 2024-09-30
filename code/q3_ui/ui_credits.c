@@ -122,11 +122,13 @@ UI_CreditMenu
 void UI_CreditMenu( void ) {
 	//************BRAWL************** remove credits menu
 	trap_Cmd_ExecuteText( EXEC_APPEND, "quit\n" );
-	//*******************************
+	
+	/* original code
 	memset( &s_credits, 0 ,sizeof(s_credits) );
-
 	s_credits.menu.draw = UI_CreditMenu_Draw;
 	s_credits.menu.key = UI_CreditMenu_Key;
 	s_credits.menu.fullscreen = qtrue;
 	UI_PushMenu ( &s_credits.menu );
+	*/
+	//*******************************
 }
