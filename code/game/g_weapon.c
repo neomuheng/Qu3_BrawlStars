@@ -864,6 +864,9 @@ void FireWeapon( gentity_t *ent ) {
 		break;
 	case WP_GRENADE_LAUNCHER:
 		weapon_grenadelauncher_fire( ent );
+		//********BRAWL********* fire grenade twice
+		weapon_grenadelauncher_fire( ent );
+		//********-----*********
 		break;
 	case WP_ROCKET_LAUNCHER:
 		Weapon_RocketLauncher_Fire( ent );
