@@ -1,6 +1,6 @@
  qagamex86
 
- Timestamp is 66faa8f0 (Mon Sep 30 09:34:40 2024)
+ Timestamp is 6707cdf4 (Thu Oct 10 08:52:04 2024)
 
  Preferred load address is 20000000
 
@@ -2534,7 +2534,7 @@
  0002:00005a24       ??_C@_0BB@IINK@g_maxGameClients?$AA@ 200b9a24     g_main.obj
  0002:00005a38       ??_C@_0L@BIFK@sv_mapname?$AA@ 200b9a38     g_main.obj
  0002:00005a48       ??_C@_0M@BGFJ@g_restarted?$AA@ 200b9a48     g_main.obj
- 0002:00005a58       ??_C@_0M@MBDE@Sep?530?52024?$AA@ 200b9a58     g_main.obj
+ 0002:00005a58       ??_C@_0M@ODAP@Oct?510?52024?$AA@ 200b9a58     g_main.obj
  0002:00005a68       ??_C@_08HGGM@gamedate?$AA@ 200b9a68     g_main.obj
  0002:00005a74       ??_C@_06EEGI@baseq3?$AA@   200b9a74     g_main.obj
  0002:00005a7c       ??_C@_08NPAP@gamename?$AA@ 200b9a7c     g_main.obj

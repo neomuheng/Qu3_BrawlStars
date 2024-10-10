@@ -314,8 +314,8 @@ void UI_MainMenu( void ) {
 	s_main.menu.fullscreen = qtrue;
 	s_main.menu.wrapAround = qtrue;
 	s_main.menu.showlogo = qtrue;
+	y= 134;
 	//*****CLEANMOD****** remove unnecssary gamemodes
-	y = 134;
 	/*s_main.singleplayer.generic.type		= MTYPE_PTEXT;
 	s_main.singleplayer.generic.flags		= QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
 	s_main.singleplayer.generic.x			= 320;
@@ -326,30 +326,33 @@ void UI_MainMenu( void ) {
 	s_main.singleplayer.color				= color_red;
 	s_main.singleplayer.style				= style; */
 
-	y += MAIN_MENU_VERTICAL_SPACING;
+	//y += MAIN_MENU_VERTICAL_SPACING;
 	s_main.multiplayer.generic.type			= MTYPE_PTEXT;
 	s_main.multiplayer.generic.flags		= QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
-	s_main.multiplayer.generic.x			= 320;
-	s_main.multiplayer.generic.y			= y;
+	s_main.multiplayer.generic.x			= 580;
+	s_main.multiplayer.generic.y			= 450;
 	s_main.multiplayer.generic.id			= ID_MULTIPLAYER;
 	s_main.multiplayer.generic.callback		= Main_MenuEvent; 
-//*******BRAWL******* change multiplayer option to white and say brawl
+//*******BRAWL******* change multiplayer option to yellow and say brawl
 	//s_main.multiplayer.string				= "MULTIPLAYER"; original code
-	s_main.multiplayer.string				= "BRAWL";
+	s_main.multiplayer.string				= "PLAY";
 	//s_main.multiplayer.color				= color_red; original code
 	s_main.multiplayer.color				= color_yellow;
 //**********************
-		s_main.multiplayer.style				= style;
+	s_main.multiplayer.style				= style;
 
-	y += MAIN_MENU_VERTICAL_SPACING;
+	//y += MAIN_MENU_VERTICAL_SPACING;
 	s_main.setup.generic.type				= MTYPE_PTEXT;
 	s_main.setup.generic.flags				= QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
-	s_main.setup.generic.x					= 320;
-	s_main.setup.generic.y					= y;
+	s_main.setup.generic.x					= 565;
+	s_main.setup.generic.y					= 5;
 	s_main.setup.generic.id					= ID_SETUP;
 	s_main.setup.generic.callback			= Main_MenuEvent; 
-	s_main.setup.string						= "SETUP";
-	s_main.setup.color						= color_red;
+	//*******BRAWL******* change setup option to yellow and say settings
+	//	s_main.setup.string						= "SETUP"; original code
+	s_main.setup.string						= "SETTINGS";
+	//s_main.setup.color					= color_red; original code
+	s_main.setup.color						= color_yellow;
 	s_main.setup.style						= style;
 
 	/*y += MAIN_MENU_VERTICAL_SPACING;
@@ -399,15 +402,15 @@ void UI_MainMenu( void ) {
 	s_main.mods.color					= color_red;
 	s_main.mods.style					= style;*/
 
-	y += MAIN_MENU_VERTICAL_SPACING;
+	//y += MAIN_MENU_VERTICAL_SPACING;
 	s_main.exit.generic.type				= MTYPE_PTEXT;
 	s_main.exit.generic.flags				= QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
-	s_main.exit.generic.x					= 320;
-	s_main.exit.generic.y					= y;
+	s_main.exit.generic.x					= 35;
+	s_main.exit.generic.y					= 5;
 	s_main.exit.generic.id					= ID_EXIT;
 	s_main.exit.generic.callback			= Main_MenuEvent; 
 	s_main.exit.string						= "EXIT";
-	s_main.exit.color						= color_red;
+	s_main.exit.color						= color_black;
 	s_main.exit.style						= style;
 
 	//Menu_AddItem( &s_main.menu,	&s_main.singleplayer );
