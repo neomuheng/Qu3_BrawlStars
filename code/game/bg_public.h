@@ -208,7 +208,10 @@ typedef enum {
 	STAT_PERSISTANT_POWERUP,
 #endif
 	STAT_WEAPONS,					// 16 bit fields
-	STAT_ARMOR,				
+	STAT_ARMOR,	
+	//*********BRAWL************* add player class stat
+	STAT_PCLASS,
+	//***************************
 	STAT_DEAD_YAW,					// look this direction when dead (FIXME: get rid of?)
 	STAT_CLIENTS_READY,				// bit mask of clients wishing to exit the intermission (FIXME: configstring?)
 	STAT_MAX_HEALTH					// health / armor limit, changable by handicap
@@ -563,6 +566,16 @@ typedef enum {
 
 	TEAM_NUM_TEAMS
 } team_t;
+
+//*******BRAWL******* declare classes/brawlers
+typedef enum {
+	PCLASS_TNTYSON,
+	PCLASS_ELSOBRINO,
+	PCLASS_OX,
+
+	PCLASS_NUM_CLASSES
+} pclass_t;
+//*******************
 
 // Time between location updates
 #define TEAM_LOCATION_UPDATE_TIME		1000
