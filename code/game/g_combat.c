@@ -907,6 +907,9 @@ void G_Damage( gentity_t *targ, gentity_t *inflictor, gentity_t *attacker,
 	}
 
 	knockback = damage;
+	if ( targ == attacker ) {
+		knockback *= 2;
+	}
 	if ( knockback > 200 ) {
 		knockback = 200;
 	}
@@ -1006,10 +1009,6 @@ void G_Damage( gentity_t *targ, gentity_t *inflictor, gentity_t *attacker,
 		//damage *= 0.5; original code
 		damage = 0;
 		//****************`
-	}
-
-	else {
-		damage /= 3;
 	}
 
 	if ( damage < 1 ) {

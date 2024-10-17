@@ -575,9 +575,9 @@ gentity_t *fire_grenade (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->parent = self;
 	//******BRAWL***** lower grenade damage
 	//bolt->damage = 100; original code
-	bolt->damage = 100;
+	bolt->damage = 34;
 	//bolt->splashDamage = 100; original code
-	bolt->splashDamage = 100;
+	bolt->splashDamage = 34;
 	bolt->splashRadius = 150;
 	//****************
 	bolt->methodOfDeath = MOD_GRENADE;
@@ -657,8 +657,8 @@ gentity_t *fire_rocket (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->s.weapon = WP_ROCKET_LAUNCHER;
 	bolt->r.ownerNum = self->s.number;
 	bolt->parent = self;
-	bolt->damage = 100;
-	bolt->splashDamage = 100;
+	bolt->damage = 50;
+	bolt->splashDamage = 50;
 	bolt->splashRadius = 120;
 	bolt->methodOfDeath = MOD_ROCKET;
 	bolt->splashMethodOfDeath = MOD_ROCKET_SPLASH;

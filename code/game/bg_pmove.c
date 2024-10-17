@@ -1663,7 +1663,7 @@ static void PM_Weapon( void ) {
 		break;
 	case WP_ROCKET_LAUNCHER:
 		//********CLEANMOD******** speed up rocket launcher (removed)
-		addTime = 800;
+		addTime = 1000;
 		//addTime = 80; sped up code
 		//**********************
 		break;
