@@ -1,12 +1,12 @@
  qagamex86
 
- Timestamp is 670522de (Tue Oct 08 08:17:34 2024)
+ Timestamp is 6711117d (Thu Oct 17 09:30:37 2024)
 
  Preferred load address is 20000000
 
  Start         Length     Name                   Class
- 0001:00000000 0007a0beH .text                   CODE
- 0001:0007a0be 00038502H .textbss                CODE
+ 0001:00000000 0007a0bdH .text                   CODE
+ 0001:0007a0bd 00038503H .textbss                CODE
  0002:00000000 00009a66H .rdata                  DATA
  0002:00009a70 0000016cH .edata                  DATA
  0003:00000000 00000104H .CRT$XCA                DATA
@@ -1329,8 +1329,8 @@
  0001:000704d0       ___getlocaleinfo           200714d0 f   LIBCMTD:inithelp.obj
  0001:00070760       _localeconv                20071760 f   LIBCMTD:lconv.obj
  0001:00070770       ___crtGetStringTypeW       20071770 f   LIBCMTD:w_str.obj
- 0001:000709e0       __strcmpi                  200719e0 f   LIBCMTD:stricmp.obj
  0001:000709e0       __stricmp                  200719e0 f   LIBCMTD:stricmp.obj
+ 0001:000709e0       __strcmpi                  200719e0 f   LIBCMTD:stricmp.obj
  0001:00070ab0       __strnicmp                 20071ab0 f   LIBCMTD:strnicmp.obj
  0001:00070bc0       __alloc_osfhnd             20071bc0 f   LIBCMTD:osfinfo.obj
  0001:00070db0       __set_osfhnd               20071db0 f   LIBCMTD:osfinfo.obj
@@ -2532,7 +2532,7 @@
  0002:00005a24       ??_C@_0BB@IINK@g_maxGameClients?$AA@ 200b9a24     g_main.obj
  0002:00005a38       ??_C@_0L@BIFK@sv_mapname?$AA@ 200b9a38     g_main.obj
  0002:00005a48       ??_C@_0M@BGFJ@g_restarted?$AA@ 200b9a48     g_main.obj
- 0002:00005a58       ??_C@_0M@IJMB@Oct?5?58?52024?$AA@ 200b9a58     g_main.obj
+ 0002:00005a58       ??_C@_0M@LGP@Oct?517?52024?$AA@ 200b9a58     g_main.obj
  0002:00005a68       ??_C@_08HGGM@gamedate?$AA@ 200b9a68     g_main.obj
  0002:00005a74       ??_C@_06EEGI@baseq3?$AA@   200b9a74     g_main.obj
  0002:00005a7c       ??_C@_08NPAP@gamename?$AA@ 200b9a7c     g_main.obj

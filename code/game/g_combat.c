@@ -1002,7 +1002,14 @@ void G_Damage( gentity_t *targ, gentity_t *inflictor, gentity_t *attacker,
 	// always give half damage if hurting self
 	// calculated after knockback, so rocket jumping works
 	if ( targ == attacker) {
-		damage *= 0.5;
+		//******BRAWL***** remove self damage for rocket jumping
+		//damage *= 0.5; original code
+		damage = 0;
+		//****************`
+	}
+
+	else {
+		damage /= 3;
 	}
 
 	if ( damage < 1 ) {
