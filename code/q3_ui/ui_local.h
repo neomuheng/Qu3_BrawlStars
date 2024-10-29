@@ -349,6 +349,12 @@ extern void UI_SetupMenu(void);
 extern void UI_TeamMainMenu( void );
 extern void TeamMain_Cache( void );
 
+
+//******BRAWL****** add mymenu methods to ui header
+extern void UI_MyBrawlerMainMenu( void );
+extern void MyBrawlerMain_Cache( void );
+//*****************
+
 //
 // ui_connect.c
 //

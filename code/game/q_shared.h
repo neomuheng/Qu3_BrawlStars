@@ -219,7 +219,7 @@ static inline float LittleFloat (const float l) { return FloatSwap(&l); }
 
 #ifdef __MACOS__
 
-#include <MacTypes.h>
+//#include <MacTypes.h>
 #define	MAC_STATIC
 #define ID_INLINE inline 
 

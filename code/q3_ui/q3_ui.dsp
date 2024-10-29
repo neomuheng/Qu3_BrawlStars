@@ -806,6 +806,20 @@ DEP_CPP_UI_MO=\
 # End Source File
 # Begin Source File
 
+SOURCE=.\ui_mymenu.c
+DEP_CPP_UI_MY=\
+	"..\cgame\tr_types.h"\
+	"..\game\bg_lib.h"\
+	"..\game\bg_public.h"\
+	"..\game\q_shared.h"\
+	"..\game\surfaceflags.h"\
+	"..\ui\ui_public.h"\
+	".\keycodes.h"\
+	".\ui_local.h"\
+	
+# End Source File
+# Begin Source File
+
 SOURCE=ui_network.c
 DEP_CPP_UI_NE=\
 	"..\cgame\tr_types.h"\

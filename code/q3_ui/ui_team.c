@@ -67,12 +67,14 @@ static void TeamMain_MenuEvent( void* ptr, int event ) {
 		return;
 	}
 
+	//**********BRAWL********** call brawler menu
 	switch( ((menucommon_s*)ptr)->id ) {
 	case ID_JOINRED:
-		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team red\n" );
-		UI_ForceMenuOff();
+		//trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team red\n" ); original code
+		//UI_ForceMenuOff(); original code
+		UI_MyBrawlerMainMenu();
 		break;
-
+	//*************************
 	case ID_JOINBLUE:
 		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team blue\n" );
 		UI_ForceMenuOff();
@@ -124,9 +126,12 @@ void TeamMain_MenuInit( void ) {
 	s_teammain.joinred.generic.callback = TeamMain_MenuEvent;
 	s_teammain.joinred.generic.x        = 320;
 	s_teammain.joinred.generic.y        = y;
-	s_teammain.joinred.string           = "JOIN RED";
+	//********BRAWL********* change team menu text
+	//s_teammain.joinred.string           = "JOIN RED"; original code
+	s_teammain.joinred.string           = "JOIN RD";
+	//**********************
 	s_teammain.joinred.style            = UI_CENTER|UI_SMALLFONT;
-	s_teammain.joinred.color            = colorRed;
+	s_teammain.joinred.color            = colorBlue;
 	y += 20;
 
 	s_teammain.joinblue.generic.type     = MTYPE_PTEXT;
@@ -168,15 +173,25 @@ void TeamMain_MenuInit( void ) {
 	// set initial states
 	switch( gametype ) {
 	case GT_SINGLE_PLAYER:
+//***BRAWL***make FFA work like TEAM
 	case GT_FFA:
+//********************************/
 	case GT_TOURNAMENT:
+	//**********************************
+	case GT_CTF:
+	//********************************
 		s_teammain.joinred.generic.flags  |= QMF_GRAYED;
 		s_teammain.joinblue.generic.flags |= QMF_GRAYED;
+		s_teammain.joingame.generic.flags |= QMF_GRAYED;
+		s_teammain.spectate.generic.flags |= QMF_GRAYED;
 		break;
 
 	default:
+/***BRAWL***make FFA work like TEAM
+	case GT_FFA:
+//******************************/
 	case GT_TEAM:
-	case GT_CTF:
+//	case GT_CTF:
 		s_teammain.joingame.generic.flags |= QMF_GRAYED;
 		break;
 	}
