@@ -1012,7 +1012,7 @@ void G_Damage( gentity_t *targ, gentity_t *inflictor, gentity_t *attacker,
 	}
 
 	if ( damage < 1 ) {
-		damage = 1;
+		damage = 0;
 	}
 	take = damage;
 	save = 0;

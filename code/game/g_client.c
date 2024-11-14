@@ -1189,6 +1189,7 @@ void ClientSpawn(gentity_t *ent) {
 
 	//*****BRAWL***** spawn with grenade launcher
 	client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GRENADE_LAUNCHER );
+	client->ps.ammo[WP_GRENADE_LAUNCHER] = -1;
 	//***************
 
 	client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
@@ -1196,7 +1197,7 @@ void ClientSpawn(gentity_t *ent) {
 	client->ps.ammo[WP_GRAPPLING_HOOK] = -1;
 
 	// health will count down towards max_health
-	ent->health = client->ps.stats[STAT_HEALTH] = client->ps.stats[STAT_MAX_HEALTH] + 25;
+	ent->health = client->ps.stats[STAT_HEALTH] = client->ps.stats[STAT_MAX_HEALTH];
 
 	G_SetOrigin( ent, spawn_origin );
 	VectorCopy( spawn_origin, client->ps.origin );
