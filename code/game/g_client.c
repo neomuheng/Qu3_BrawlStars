@@ -1232,7 +1232,8 @@ void ClientSpawn(gentity_t *ent) {
 	client->ps.clientNum = index;
 
 	//*******************************BRAWL****************************** assign weapons according to class here, reference EvM
-
+	//4800 is lowest health in brawl stars, in game equivalent is 100 health
+	//to calculate a brawlers health divide brawler health by 4800 and multiply 100 by that number and round to whatever
 	client->ps.stats[STAT_PCLASS] = client->pers.playerclass;
 
 	//client->ps.stats[STAT_WEAPONS] = ( 1 << WP_MACHINEGUN );
@@ -1243,26 +1244,32 @@ void ClientSpawn(gentity_t *ent) {
 	case PCLASS_DYNAMIKER:
 		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GRENADE_LAUNCHER );
 		client->ps.ammo[WP_GRENADE_LAUNCHER] = -1;
+		client->ps.stats[STAT_MAX_HEALTH] = 120;
 		break;
 	case PCLASS_DYNAMIKEB:
 		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GRENADE_LAUNCHER );
 		client->ps.ammo[WP_GRENADE_LAUNCHER] = -1;
+		client->ps.stats[STAT_MAX_HEALTH] = 120;
 		break;
 	case PCLASS_ELPRIMOR:
 		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
 		client->ps.ammo[WP_GAUNTLET] = -1;
+		client->ps.stats[STAT_MAX_HEALTH] = 240;
 		break;
 	case PCLASS_ELPRIMOB:
 		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
 		client->ps.ammo[WP_GAUNTLET] = -1;
+		client->ps.stats[STAT_MAX_HEALTH] = 240;
 		break;
 	case PCLASS_SHELLYR:
 		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_SHOTGUN );
 		client->ps.ammo[WP_SHOTGUN] = -1;
+		client->ps.stats[STAT_MAX_HEALTH] = 150;
 		break;
 	case PCLASS_SHELLYB:
 		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_SHOTGUN );
 		client->ps.ammo[WP_SHOTGUN] = -1;
+		client->ps.stats[STAT_MAX_HEALTH] = 150;
 		break;
 	}
 

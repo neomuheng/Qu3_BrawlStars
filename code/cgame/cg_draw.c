@@ -2281,11 +2281,14 @@ static void CG_DrawAmmoWarning( void ) {
 	if ( !cg.lowAmmoWarning ) {
 		return;
 	}
-
+	//*************BRAWL********** remove low ammo warning
 	if ( cg.lowAmmoWarning == 2 ) {
-		s = "OUT OF AMMO";
+		//s = "OUT OF AMMO"; original code
+		s = "";
 	} else {
-		s = "LOW AMMO WARNING";
+		//s = "LOW AMMO WARNING"; original code
+		s = "";
+	//***************************
 	}
 	w = CG_DrawStrlen( s ) * BIGCHAR_WIDTH;
 	CG_DrawBigString(320 - w / 2, 64, s, 1.0F);
