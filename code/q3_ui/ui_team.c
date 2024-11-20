@@ -146,7 +146,6 @@ void TeamMain_MenuInit( void ) {
 	s_teammain.joinblue.color            = colorBlue;
 	y += 20;
 
-	/* BRAWL remove join game
 	s_teammain.joingame.generic.type     = MTYPE_PTEXT;
 	s_teammain.joingame.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
 	s_teammain.joingame.generic.id       = ID_JOINGAME;
@@ -157,7 +156,6 @@ void TeamMain_MenuInit( void ) {
 	s_teammain.joingame.style            = UI_CENTER|UI_SMALLFONT;
 	s_teammain.joingame.color            = colorRed;
 	y += 20;
-	*/
 
 	s_teammain.spectate.generic.type     = MTYPE_PTEXT;
 	s_teammain.spectate.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
