@@ -889,7 +889,9 @@ void G_Damage( gentity_t *targ, gentity_t *inflictor, gentity_t *attacker,
 		}
 #endif
 //*************---***********************************/
-		damage = damage * max / 100;
+		//*****BRAWL***** remove damage being effected by max health
+		//damage = damage * max / 100; original code
+		//***************
 	}
 
 	client = targ->client;

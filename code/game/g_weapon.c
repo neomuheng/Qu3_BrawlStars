@@ -327,6 +327,9 @@ void ShotgunPattern( vec3_t origin, vec3_t origin2, int seed, gentity_t *ent ) {
 	vec3_t		forward, right, up;
 	int			oldScore;
 	qboolean	hitClient = qfalse;
+	//*****BRAWL***** add variable to effect shotgun accuracy
+	double		accuracyFactor = 1.3;
+	//***************
 
 	// derive the right and up vectors from the forward vector, because
 	// the client won't have any other information
@@ -338,8 +341,12 @@ void ShotgunPattern( vec3_t origin, vec3_t origin2, int seed, gentity_t *ent ) {
 
 	// generate the "random" spread pattern
 	for ( i = 0 ; i < DEFAULT_SHOTGUN_COUNT ; i++ ) {
-		r = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
-		u = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
+		//*****BRAWL***** change shotgun accuracy
+		//r = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
+		//u = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
+		r = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * accuracyFactor * 16;
+		u = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * accuracyFactor * 16;
+		//***************
 		VectorMA( origin, 8192 * 16, forward, end);
 		VectorMA (end, r, right, end);
 		VectorMA (end, u, up, end);

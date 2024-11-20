@@ -129,10 +129,10 @@ void TeamMain_MenuInit( void ) {
 	s_teammain.joinred.generic.y        = y;
 	//********BRAWL********* change team menu text
 	//s_teammain.joinred.string           = "JOIN RED"; original code
-	s_teammain.joinred.string           = "JOIN RD";
+	s_teammain.joinred.string           = "JOIN RED";
 	//**********************
 	s_teammain.joinred.style            = UI_CENTER|UI_SMALLFONT;
-	s_teammain.joinred.color            = colorBlue;
+	s_teammain.joinred.color            = colorRed;
 	y += 20;
 
 	s_teammain.joinblue.generic.type     = MTYPE_PTEXT;
@@ -143,9 +143,10 @@ void TeamMain_MenuInit( void ) {
 	s_teammain.joinblue.generic.y        = y;
 	s_teammain.joinblue.string           = "JOIN BLUE";
 	s_teammain.joinblue.style            = UI_CENTER|UI_SMALLFONT;
-	s_teammain.joinblue.color            = colorRed;
+	s_teammain.joinblue.color            = colorBlue;
 	y += 20;
 
+	/* BRAWL remove join game
 	s_teammain.joingame.generic.type     = MTYPE_PTEXT;
 	s_teammain.joingame.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
 	s_teammain.joingame.generic.id       = ID_JOINGAME;
@@ -156,6 +157,7 @@ void TeamMain_MenuInit( void ) {
 	s_teammain.joingame.style            = UI_CENTER|UI_SMALLFONT;
 	s_teammain.joingame.color            = colorRed;
 	y += 20;
+	*/
 
 	s_teammain.spectate.generic.type     = MTYPE_PTEXT;
 	s_teammain.spectate.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
