@@ -1235,14 +1235,34 @@ void ClientSpawn(gentity_t *ent) {
 
 	client->ps.stats[STAT_PCLASS] = client->pers.playerclass;
 
-	client->ps.stats[STAT_WEAPONS] = ( 1 << WP_MACHINEGUN );
-	client->ps.ammo[WP_MACHINEGUN] = -1;
+	//client->ps.stats[STAT_WEAPONS] = ( 1 << WP_MACHINEGUN );
+	//client->ps.ammo[WP_MACHINEGUN] = -1;
 
 	switch (client->pers.playerclass)
 	{
 	case PCLASS_DYNAMIKER:
 		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GRENADE_LAUNCHER );
 		client->ps.ammo[WP_GRENADE_LAUNCHER] = -1;
+		break;
+	case PCLASS_DYNAMIKEB:
+		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GRENADE_LAUNCHER );
+		client->ps.ammo[WP_GRENADE_LAUNCHER] = -1;
+		break;
+	case PCLASS_ELPRIMOR:
+		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
+		client->ps.ammo[WP_GAUNTLET] = -1;
+		break;
+	case PCLASS_ELPRIMOB:
+		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
+		client->ps.ammo[WP_GAUNTLET] = -1;
+		break;
+	case PCLASS_SHELLYR:
+		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_SHOTGUN );
+		client->ps.ammo[WP_SHOTGUN] = -1;
+		break;
+	case PCLASS_SHELLYB:
+		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_SHOTGUN );
+		client->ps.ammo[WP_SHOTGUN] = -1;
 		break;
 	}
 
@@ -1251,9 +1271,9 @@ void ClientSpawn(gentity_t *ent) {
 	//******************************************************************
 
 
-	client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
-	client->ps.ammo[WP_GAUNTLET] = -1;
-	client->ps.ammo[WP_GRAPPLING_HOOK] = -1;
+	//client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET ); original code gives gauntlet to all
+	//client->ps.ammo[WP_GAUNTLET] = -1;
+	//client->ps.ammo[WP_GRAPPLING_HOOK] = -1;
 
 	// health will count down towards max_health
 	ent->health = client->ps.stats[STAT_HEALTH] = client->ps.stats[STAT_MAX_HEALTH];

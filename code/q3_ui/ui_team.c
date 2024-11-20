@@ -74,11 +74,12 @@ static void TeamMain_MenuEvent( void* ptr, int event ) {
 		//UI_ForceMenuOff(); original code
 		UI_MyBrawlerMainMenu();
 		break;
-	//*************************
 	case ID_JOINBLUE:
-		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team blue\n" );
-		UI_ForceMenuOff();
+		//trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team blue\n" ); original code
+		//UI_ForceMenuOff(); original code
+		UI_MyBrawlerBMainMenu();
 		break;
+	//************************
 
 	case ID_JOINGAME:
 		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team free\n" );

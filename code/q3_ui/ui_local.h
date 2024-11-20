@@ -353,6 +353,8 @@ extern void TeamMain_Cache( void );
 //******BRAWL****** add mymenu methods to ui header
 extern void UI_MyBrawlerMainMenu( void );
 extern void MyBrawlerMain_Cache( void );
+extern void UI_MyBrawlerBMainMenu( void );
+extern void MyBrawlerBMain_Cache( void );
 //*****************
 
 //

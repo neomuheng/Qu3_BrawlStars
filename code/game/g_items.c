@@ -438,31 +438,32 @@ void Touch_Item (gentity_t *ent, gentity_t *other, trace_t *trace) {
 	G_LogPrintf( "Item: %i %s\n", other->s.number, ent->item->classname );
 
 	predict = other->client->pers.predictItemPickup;
-//***************BRAWL************** TODO: remove weapon pickups
+//***************BRAWL************** remove weapon and other item pickups
 	// call the item-specific pickup function
 	switch( ent->item->giType ) {
 	case IT_WEAPON:
-		respawn = Pickup_Weapon(ent, other);
+		//respawn = Pickup_Weapon(ent, other); original code
 //		predict = qfalse;
 		break;
 	case IT_AMMO:
-		respawn = Pickup_Ammo(ent, other);
+		//respawn = Pickup_Ammo(ent, other); original code
 //		predict = qfalse;
 		break;
 	case IT_ARMOR:
-		respawn = Pickup_Armor(ent, other);
+		//respawn = Pickup_Armor(ent, other); original code
 		break;
 	case IT_HEALTH:
-		respawn = Pickup_Health(ent, other);
+		//respawn = Pickup_Health(ent, other); original code
 		break;
 	case IT_POWERUP:
-		respawn = Pickup_Powerup(ent, other);
+		//respawn = Pickup_Powerup(ent, other); original code
 		predict = qfalse;
 		break;
 #ifdef MISSIONPACK
 	case IT_PERSISTANT_POWERUP:
-		respawn = Pickup_PersistantPowerup(ent, other);
+		//respawn = Pickup_PersistantPowerup(ent, other); original code
 		break;
+//*************************************
 #endif
 	case IT_TEAM:
 		respawn = Pickup_Team(ent, other);
