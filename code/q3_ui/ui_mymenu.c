@@ -19,11 +19,16 @@ START brawler MENU *****
 //#define MYEARTHMAIN_FRAME	"menu/art/cut_frame"
 
 //IDs to call object
-#define ID_TNTYSON		200
-#define ID_ELSOBRINO	201
-#define ID_SHELLY		202
+#define ID_DYNAMIKER	200
+#define ID_DYNAMIKEB	201
 
-int teamFlag; //0 is TNTyson, 1 is El Sobrino, 2 is Shelly
+#define ID_ELPRIMOR		202
+#define ID_ELPRIMOB		203
+
+#define ID_SHELLYR		204
+#define ID_SHELLYB		205
+
+int teamFlag; //0-1 is Dynamike, 2-3 is El Primo, 4-5 is Shelly
 
 
 typedef struct
@@ -31,9 +36,9 @@ typedef struct
 	menuframework_s mybrawlermenu;
 	menubitmap_s	myframe;
 	menutext_s		header;
-	menutext_s		joinTntyson;
-	menutext_s		joinElsobrino;
-	menutext_s		joinShelly;
+	menutext_s		joinDynamikeR;
+	menutext_s		joinElPrimoR;
+	menutext_s		joinShellyR;
 
 }mybrawlermain_t;
 
@@ -53,13 +58,19 @@ static void MyBrawlerMain_MenuEvent( void* ptr, int event ) {
 
 	switch( ((menucommon_s*)ptr)->id ) {
 
-	case ID_TNTYSON:
-		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team tntyson\n" );
+	case ID_DYNAMIKER:
+		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team dynamiker\n" );
 		UI_ForceMenuOff();
 		break;
 
-	case ID_ELSOBRINO:
-		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team elsobrino\n" );
+
+	case ID_ELPRIMOR:
+		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team elprimor\n" );
+		UI_ForceMenuOff();
+		break;
+
+	case ID_SHELLYR:
+		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team shellyr\n");
 		UI_ForceMenuOff();
 		break;
 	}
@@ -96,37 +107,37 @@ void MyBrawlerMain_MenuInit( void ) {
 	s_mybrawlermain.header.color            = colorWhite;
 	y += 30;
 	
-	s_mybrawlermain.joinTntyson.generic.type     = MTYPE_PTEXT;
-	s_mybrawlermain.joinTntyson.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
-	s_mybrawlermain.joinTntyson.generic.id       = ID_TNTYSON;
-	s_mybrawlermain.joinTntyson.generic.callback = MyBrawlerMain_MenuEvent;
-	s_mybrawlermain.joinTntyson.generic.x        = 320;
-	s_mybrawlermain.joinTntyson.generic.y        = y;
-	s_mybrawlermain.joinTntyson.string           = "Dynamike";//TnTyson
-	s_mybrawlermain.joinTntyson.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-	s_mybrawlermain.joinTntyson.color            = colorWhite;
+	s_mybrawlermain.joinDynamikeR.generic.type     = MTYPE_PTEXT;
+	s_mybrawlermain.joinDynamikeR.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
+	s_mybrawlermain.joinDynamikeR.generic.id       = ID_DYNAMIKER;
+	s_mybrawlermain.joinDynamikeR.generic.callback = MyBrawlerMain_MenuEvent;
+	s_mybrawlermain.joinDynamikeR.generic.x        = 320;
+	s_mybrawlermain.joinDynamikeR.generic.y        = y;
+	s_mybrawlermain.joinDynamikeR.string           = "Dynamike";//TnTyson
+	s_mybrawlermain.joinDynamikeR.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
+	s_mybrawlermain.joinDynamikeR.color            = colorWhite;
 	y += 30;
 	
-	s_mybrawlermain.joinElsobrino.generic.type     = MTYPE_PTEXT;
-	s_mybrawlermain.joinElsobrino.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
-	s_mybrawlermain.joinElsobrino.generic.id       = ID_ELSOBRINO;
-	s_mybrawlermain.joinElsobrino.generic.callback = MyBrawlerMain_MenuEvent;
-	s_mybrawlermain.joinElsobrino.generic.x        = 320;
-	s_mybrawlermain.joinElsobrino.generic.y        = y;
-	s_mybrawlermain.joinElsobrino.string           = "El Primo";//El Sobrino
-	s_mybrawlermain.joinElsobrino.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-	s_mybrawlermain.joinElsobrino.color            = colorWhite;
+	s_mybrawlermain.joinElPrimoR.generic.type     = MTYPE_PTEXT;
+	s_mybrawlermain.joinElPrimoR.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
+	s_mybrawlermain.joinElPrimoR.generic.id       = ID_ELPRIMOR;
+	s_mybrawlermain.joinElPrimoR.generic.callback = MyBrawlerMain_MenuEvent;
+	s_mybrawlermain.joinElPrimoR.generic.x        = 320;
+	s_mybrawlermain.joinElPrimoR.generic.y        = y;
+	s_mybrawlermain.joinElPrimoR.string           = "El Primo";//El Sobrino
+	s_mybrawlermain.joinElPrimoR.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
+	s_mybrawlermain.joinElPrimoR.color            = colorWhite;
 	y += 30;
 
-	s_mybrawlermain.joinShelly.generic.type     = MTYPE_PTEXT;
-	s_mybrawlermain.joinShelly.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
-	s_mybrawlermain.joinShelly.generic.id       = ID_SHELLY;
-	s_mybrawlermain.joinShelly.generic.callback = MyBrawlerMain_MenuEvent;
-	s_mybrawlermain.joinShelly.generic.x        = 320;
-	s_mybrawlermain.joinShelly.generic.y        = y;
-	s_mybrawlermain.joinShelly.string           = "Shelly";//Shelly
-	s_mybrawlermain.joinShelly.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-	s_mybrawlermain.joinShelly.color            = colorWhite;
+	s_mybrawlermain.joinShellyR.generic.type     = MTYPE_PTEXT;
+	s_mybrawlermain.joinShellyR.generic.flags    = QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
+	s_mybrawlermain.joinShellyR.generic.id       = ID_SHELLYR;
+	s_mybrawlermain.joinShellyR.generic.callback = MyBrawlerMain_MenuEvent;
+	s_mybrawlermain.joinShellyR.generic.x        = 320;
+	s_mybrawlermain.joinShellyR.generic.y        = y;
+	s_mybrawlermain.joinShellyR.string           = "Shelly";//Shelly
+	s_mybrawlermain.joinShellyR.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
+	s_mybrawlermain.joinShellyR.color            = colorWhite;
 	y += 30;
 	
 	trap_GetConfigString(CS_SERVERINFO, info, MAX_INFO_STRING);   
@@ -134,9 +145,9 @@ void MyBrawlerMain_MenuInit( void ) {
 		      
 
 	Menu_AddItem( &s_mybrawlermain.mybrawlermenu, (void*) &s_mybrawlermain.header );
-	Menu_AddItem( &s_mybrawlermain.mybrawlermenu, (void*) &s_mybrawlermain.joinTntyson );
-	Menu_AddItem( &s_mybrawlermain.mybrawlermenu, (void*) &s_mybrawlermain.joinElsobrino );
-	Menu_AddItem( &s_mybrawlermain.mybrawlermenu, (void*) &s_mybrawlermain.joinShelly );
+	Menu_AddItem( &s_mybrawlermain.mybrawlermenu, (void*) &s_mybrawlermain.joinDynamikeR );
+	Menu_AddItem( &s_mybrawlermain.mybrawlermenu, (void*) &s_mybrawlermain.joinElPrimoR );
+	Menu_AddItem( &s_mybrawlermain.mybrawlermenu, (void*) &s_mybrawlermain.joinShellyR );
 
 }
 

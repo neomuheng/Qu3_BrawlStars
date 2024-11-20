@@ -438,7 +438,7 @@ void Touch_Item (gentity_t *ent, gentity_t *other, trace_t *trace) {
 	G_LogPrintf( "Item: %i %s\n", other->s.number, ent->item->classname );
 
 	predict = other->client->pers.predictItemPickup;
-
+//***************BRAWL************** TODO: remove weapon pickups
 	// call the item-specific pickup function
 	switch( ent->item->giType ) {
 	case IT_WEAPON:

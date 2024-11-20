@@ -696,7 +696,7 @@ The game can override any of the settings and call trap_SetUserinfo
 if desired.
 ============
 */
-void ClientUserinfoChanged( int clientNum ) {
+void ClientUserinfoChanged( int clientNum, int PC ) {
 	gentity_t *ent;
 	int		teamTask, teamLeader, team, health;
 	char	*s;
@@ -774,8 +774,11 @@ void ClientUserinfoChanged( int clientNum ) {
 #endif
 	client->ps.stats[STAT_MAX_HEALTH] = client->pers.maxHealth;
 
+	//*****BRAWL***** make ffa work like team
 	// set model
-	if( g_gametype.integer >= GT_TEAM ) {
+	//if( g_gametype.integer >= GT_TEAM ) { original code
+	if( g_gametype.integer >= GT_FFA ) {
+	//****************
 		Q_strncpyz( model, Info_ValueForKey (userinfo, "team_model"), sizeof( model ) );
 		Q_strncpyz( headModel, Info_ValueForKey (userinfo, "team_headmodel"), sizeof( headModel ) );
 	} else {
@@ -790,6 +793,19 @@ void ClientUserinfoChanged( int clientNum ) {
 			team = TEAM_RED;
 		} else if ( !Q_stricmp( s, "blue" ) || !Q_stricmp( s, "b" ) ) {
 			team = TEAM_BLUE;
+		//******BRAWL***** set pclass to respective teams
+		} else if ( !Q_stricmp( s, "ElPrimoR" ) ) {
+			team = TEAM_RED;
+		} else if ( !Q_stricmp( s, "ElPrimoB" ) ) {
+			team = TEAM_BLUE;
+		} else if ( !Q_stricmp( s, "DynamikeR" ) ) {
+			team = TEAM_RED;
+		} else if ( !Q_stricmp( s, "DynamikeB" ) ) {
+			team = TEAM_BLUE;
+		} else if ( !Q_stricmp( s, "ShellyR" ) ) {
+			team = TEAM_RED;
+		} else if ( !Q_stricmp( s, "ShellyB" ) ) {
+			team = TEAM_BLUE;
 		} else {
 			// pick the team with the least number of players
 			team = PickTeam( clientNum );
@@ -798,6 +814,43 @@ void ClientUserinfoChanged( int clientNum ) {
 	else {
 		team = client->sess.sessionTeam;
 	}
+
+	//********BRAWL*********** swap pc to pclass
+	
+	if(g_gametype.integer == GT_FFA)
+	{
+		if(team==TEAM_BLUE)
+			client->pers.newplayerclass = PCLASS_SHELLYB;
+		else
+			client->pers.newplayerclass = PCLASS_SHELLYR;
+	}
+	else if(PC==0)
+	{
+		client->pers.newplayerclass = PCLASS_DYNAMIKER;
+	} 
+	else if(PC==1)
+	{
+		client->pers.newplayerclass = PCLASS_DYNAMIKEB;
+	}
+	else if(PC==2)
+	{
+		client->pers.newplayerclass = PCLASS_ELPRIMOR;
+	} 
+	else if(PC==3)
+	{
+		client->pers.newplayerclass = PCLASS_ELPRIMOB;
+	}
+	else if(PC==4)
+	{
+		client->pers.newplayerclass = PCLASS_SHELLYR;
+	} 
+	else if(PC==5)
+	{
+		client->pers.newplayerclass = PCLASS_SHELLYB;
+	}
+
+	client->pers.playerclass = client->pers.newplayerclass;
+	//************************
 
 /*	NOTE: all client side now
 
@@ -960,7 +1013,7 @@ char *ClientConnect( int clientNum, qboolean firstTime, qboolean isBot ) {
 
 	// get and distribute relevent paramters
 	G_LogPrintf( "ClientConnect: %i\n", clientNum );
-	ClientUserinfoChanged( clientNum );
+	ClientUserinfoChanged( clientNum, 1012 );
 
 	// don't do the "xxx connected" messages if they were caried over from previous level
 	if ( firstTime ) {
@@ -1178,19 +1231,25 @@ void ClientSpawn(gentity_t *ent) {
 
 	client->ps.clientNum = index;
 
-	//*****BRAWL***** assign weapons according to class here, reference EvM
+	//*******************************BRAWL****************************** assign weapons according to class here, reference EvM
+
+	client->ps.stats[STAT_PCLASS] = client->pers.playerclass;
 
 	client->ps.stats[STAT_WEAPONS] = ( 1 << WP_MACHINEGUN );
-	if ( g_gametype.integer == GT_TEAM ) {
-		client->ps.ammo[WP_MACHINEGUN] = 50;
-	} else {
-		client->ps.ammo[WP_MACHINEGUN] = 100;
+	client->ps.ammo[WP_MACHINEGUN] = -1;
+
+	switch (client->pers.playerclass)
+	{
+	case PCLASS_DYNAMIKER:
+		client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GRENADE_LAUNCHER );
+		client->ps.ammo[WP_GRENADE_LAUNCHER] = -1;
+		break;
 	}
 
-	//*****BRAWL***** spawn with grenade launcher
-	client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GRENADE_LAUNCHER );
-	client->ps.ammo[WP_GRENADE_LAUNCHER] = -1;
-	//***************
+
+
+	//******************************************************************
+
 
 	client->ps.stats[STAT_WEAPONS] |= ( 1 << WP_GAUNTLET );
 	client->ps.ammo[WP_GAUNTLET] = -1;
@@ -1330,7 +1389,7 @@ void ClientDisconnect( int clientNum ) {
 		&& !level.intermissiontime
 		&& !level.warmupTime && level.sortedClients[1] == clientNum ) {
 		level.clients[ level.sortedClients[0] ].sess.wins++;
-		ClientUserinfoChanged( level.sortedClients[0] );
+		ClientUserinfoChanged( level.sortedClients[0], 1012 ); //BRAWL potential error lmk
 	}
 
 	trap_UnlinkEntity (ent);

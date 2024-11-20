@@ -214,7 +214,7 @@ int vmMain( int command, int arg0, int arg1, int arg2, int arg3, int arg4, int a
 		ClientThink( arg0 );
 		return 0;
 	case GAME_CLIENT_USERINFO_CHANGED:
-		ClientUserinfoChanged( arg0 );
+		ClientUserinfoChanged( arg0, 1012 ); //BRAWL potential error
 		return 0;
 	case GAME_CLIENT_DISCONNECT:
 		ClientDisconnect( arg0 );
@@ -681,13 +681,13 @@ void AdjustTournamentScores( void ) {
 	clientNum = level.sortedClients[0];
 	if ( level.clients[ clientNum ].pers.connected == CON_CONNECTED ) {
 		level.clients[ clientNum ].sess.wins++;
-		ClientUserinfoChanged( clientNum );
+		ClientUserinfoChanged( clientNum, 1012 );
 	}
 
 	clientNum = level.sortedClients[1];
 	if ( level.clients[ clientNum ].pers.connected == CON_CONNECTED ) {
 		level.clients[ clientNum ].sess.losses++;
-		ClientUserinfoChanged( clientNum );
+		ClientUserinfoChanged( clientNum, 1012 );
 	}
 
 }
@@ -1574,11 +1574,11 @@ void SetLeader(int team, int client) {
 			continue;
 		if (level.clients[i].sess.teamLeader) {
 			level.clients[i].sess.teamLeader = qfalse;
-			ClientUserinfoChanged(i);
+			ClientUserinfoChanged(i, 1012);
 		}
 	}
 	level.clients[client].sess.teamLeader = qtrue;
-	ClientUserinfoChanged( client );
+	ClientUserinfoChanged( client, 1012 );
 	PrintTeam(team, va("print \"%s is the new team leader\n\"", level.clients[client].pers.netname) );
 }
 

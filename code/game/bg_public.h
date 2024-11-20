@@ -569,9 +569,12 @@ typedef enum {
 
 //*******BRAWL******* declare classes/brawlers
 typedef enum {
-	PCLASS_TNTYSON,
-	PCLASS_ELSOBRINO,
-	PCLASS_OX,
+	PCLASS_ELPRIMOR,
+	PCLASS_ELPRIMOB,
+	PCLASS_DYNAMIKER,
+	PCLASS_DYNAMIKEB,
+	PCLASS_SHELLYR,
+	PCLASS_SHELLYB,
 
 	PCLASS_NUM_CLASSES
 } pclass_t;

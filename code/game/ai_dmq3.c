@@ -119,7 +119,7 @@ void BotSetUserInfo(bot_state_t *bs, char *key, char *value) {
 	trap_GetUserinfo(bs->client, userinfo, sizeof(userinfo));
 	Info_SetValueForKey(userinfo, key, value);
 	trap_SetUserinfo(bs->client, userinfo);
-	ClientUserinfoChanged( bs->client );
+	ClientUserinfoChanged( bs->client, 1012 );
 }
 
 /*

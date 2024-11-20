@@ -24,6 +24,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #include "../../ui/menudef.h"			// for the voice chats
 
+//****BRAWL**** pc init
+int PC=1012;
+
 /*
 ==================
 DeathmatchScoreboardMessage
@@ -454,7 +457,7 @@ void Cmd_TeamTask_f( gentity_t *ent ) {
 	trap_GetUserinfo(client, userinfo, sizeof(userinfo));
 	Info_SetValueForKey(userinfo, "teamtask", va("%d", task));
 	trap_SetUserinfo(client, userinfo);
-	ClientUserinfoChanged(client);
+	ClientUserinfoChanged(client, 1012);
 }
 
 
@@ -535,18 +538,43 @@ void SetTeam( gentity_t *ent, char *s ) {
 	} else if ( !Q_stricmp( s, "spectator" ) || !Q_stricmp( s, "s" ) ) {
 		team = TEAM_SPECTATOR;
 		specState = SPECTATOR_FREE;
-	} else if ( g_gametype.integer >= GT_TEAM ) {
+	//***********************BRAWL************************************ make FFA work like TEAM
+	//} else if ( g_gametype.integer >= GT_TEAM ) { original code
+	} else if ( g_gametype.integer >= GT_FFA ) {
+	//****************************************************************
 		// if running a team game, assign player to one of the teams
 		specState = SPECTATOR_NOT;
 		if ( !Q_stricmp( s, "red" ) || !Q_stricmp( s, "r" ) ) {
 			team = TEAM_RED;
-		} else if ( !Q_stricmp( s, "blue" ) || !Q_stricmp( s, "b" ) ) {
+		//***********BRAWL************ assign teams from brawlers
+		//} else if ( !Q_stricmp( s, "blue" ) || !Q_stricmp( s, "b" ) ) { original code
+		//	team = TEAM_BLUE; original code
+
+		} else if ( !Q_stricmp(s, "dynamiker" ) ) {
+			team = TEAM_RED;
+			PC=0;
+		} else if ( !Q_stricmp(s, "dynamikeb" ) ) {
 			team = TEAM_BLUE;
+			PC=1;
+		} else if ( !Q_stricmp(s, "elprimor" ) ) {
+			team = TEAM_RED;
+			PC=2;
+		} else if ( !Q_stricmp(s, "elprimob" ) ) {
+			team = TEAM_BLUE;
+			PC=3;
+		} else if ( !Q_stricmp(s, "shellyr" ) ) {
+			team = TEAM_RED;
+			PC=4;
+		} else if ( !Q_stricmp(s, "shellyb" ) ) {
+			team = TEAM_BLUE;
+			PC=5;
+
 		} else {
 			// pick the team with the least number of players
 			team = PickTeam( clientNum );
 		}
 
+		/*****************BRAWL****************** don't force team balance
 		if ( g_teamForceBalance.integer  ) {
 			int		counts[TEAM_NUM_TEAMS];
 
@@ -567,6 +595,7 @@ void SetTeam( gentity_t *ent, char *s ) {
 
 			// It's ok, the team we are switching to has less or same number of players
 		}
+	*************************************************/
 
 	} else {
 		// force them to spectators if there aren't any spots free
@@ -629,12 +658,21 @@ void SetTeam( gentity_t *ent, char *s ) {
 	if ( oldTeam == TEAM_RED || oldTeam == TEAM_BLUE ) {
 		CheckTeamLeader( oldTeam );
 	}
+	//*************BRAWL********* reference EvM for this
+	//if ( oldTeam == TEAM_RED || oldTeam == TEAM_BLUE ) {
+	//	BroadcastTeamChange( client, oldTeam, qtrue, PC );//if just morphing into different pclass
+	//} else {
+	//	BroadcastTeamChange( client, oldTeam, qfalse, PC );//if changing team as well
+	//}
+	//***************************
 
 	BroadcastTeamChange( client, oldTeam );
 
 	// get and distribute relevent paramters
-	ClientUserinfoChanged( clientNum );
-
+	//****BRAWL**** redistribute parameters
+	//ClientUserinfoChanged( clientNum ); original code
+	ClientUserinfoChanged( clientNum, PC ); //PC
+	//*************
 	ClientBegin( clientNum );
 }
 

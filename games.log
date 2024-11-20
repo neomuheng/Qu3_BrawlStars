@@ -1920,3 +1920,172 @@
   0:25 ClientDisconnect: 1
   0:42 ShutdownGame:
   0:42 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\g_maxGameClients\0\capturelimit\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:10 ClientConnect: 1
+  0:10 ClientUserinfoChanged: 1 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:11 ClientUserinfoChanged: 1 n\NooB\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:11 ClientBegin: 1
+  0:17 Item: 1 item_armor_shard
+  0:17 Item: 1 item_armor_shard
+  0:17 Item: 1 item_armor_shard
+  0:19 Item: 1 weapon_shotgun
+  0:19 Item: 0 weapon_rocketlauncher
+  0:27 Kill: 0 1 11: NooB killed NooB by MOD_LIGHTNING
+  0:28 Item: 0 weapon_grenadelauncher
+  0:30 Item: 1 weapon_plasmagun
+  0:31 Item: 0 weapon_grapplinghook
+  0:32 Item: 0 item_quad
+  0:32 Item: 0 item_haste
+  0:33 Item: 0 item_enviro
+  0:33 Item: 0 item_regen
+  0:33 Item: 0 item_flight
+  0:34 Item: 0 item_invis
+  0:35 Item: 1 ammo_bullets
+  0:46 Kill: 0 1 13: NooB killed NooB by MOD_BFG_SPLASH
+  0:56 Item: 1 weapon_plasmagun
+  1:00 Item: 1 item_armor_body
+  1:03 Kill: 0 1 13: NooB killed NooB by MOD_BFG_SPLASH
+  1:06 Item: 1 weapon_plasmagun
+  1:08 Item: 1 weapon_rocketlauncher
+  1:09 Item: 1 ammo_cells
+  1:20 Kill: 0 1 11: NooB killed NooB by MOD_LIGHTNING
+  1:24 Item: 1 weapon_plasmagun
+  1:24 Item: 0 weapon_grapplinghook
+  1:27 Item: 1 weapon_plasmagun
+  1:37 Kill: 0 1 2: NooB killed NooB by MOD_GAUNTLET
+  1:38 Item: 0 weapon_plasmagun
+  1:40 Item: 0 item_health_large
+  1:55 Item: 1 weapon_plasmagun
+  1:55 Item: 0 item_invis
+  2:00 Item: 1 item_armor_body
+  2:04 Item: 0 weapon_rocketlauncher
+  2:15 Item: 0 weapon_rocketlauncher
+  2:21 Item: 0 weapon_rocketlauncher
+  2:26 Item: 0 weapon_rocketlauncher
+  2:35 Item: 0 weapon_rocketlauncher
+  2:38 Item: 1 item_health_large
+  2:40 Kill: 0 1 2: NooB killed NooB by MOD_GAUNTLET
+  2:40 Item: 0 weapon_grenadelauncher
+  2:43 ShutdownGame:
+  2:43 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \capturelimit\0\g_maxGameClients\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\3\protocol\68\mapname\Q3DM6\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:01 ClientConnect: 1
+  0:01 ClientUserinfoChanged: 1 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientUserinfoChanged: 1 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientUserinfoChanged: 1 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientBegin: 1
+  0:05 ClientDisconnect: 1
+  0:05 Item: 0 weapon_plasmagun
+  0:09 Item: 0 item_health_small
+  0:09 Item: 0 item_health_small
+  0:09 Item: 0 item_health_small
+  0:09 Item: 0 item_health_small
+  0:12 Item: 0 ammo_rockets
+  0:12 Item: 0 ammo_shells
+  0:13 Item: 0 weapon_shotgun
+  0:15 Item: 0 ammo_rockets
+  0:15 Item: 0 ammo_bullets
+  0:15 Item: 0 ammo_cells
+  0:17 Item: 0 item_armor_body
+  1:40 Item: 0 item_health
+  1:48 ShutdownGame:
+  1:48 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\g_maxGameClients\0\capturelimit\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\0\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\0\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ShutdownGame:
+  0:01 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \capturelimit\0\g_maxGameClients\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\3\protocol\68\mapname\Q3DM6\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:07 Kill: 0 0 20: NooB killed NooB by MOD_SUICIDE
+  0:07 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:07 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:07 ClientBegin: 0
+  0:15 ShutdownGame:
+  0:15 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\g_maxGameClients\0\capturelimit\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\3\protocol\68\mapname\Q3DM6\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:06 Kill: 0 0 20: NooB killed NooB by MOD_SUICIDE
+  0:06 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:06 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:06 ClientBegin: 0
+  0:15 ShutdownGame:
+  0:15 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \capturelimit\0\g_maxGameClients\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\3\protocol\68\mapname\Q3DM6\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:06 Kill: 0 0 20: NooB killed NooB by MOD_SUICIDE
+  0:06 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:06 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:06 ClientBegin: 0
+  0:15 ShutdownGame:
+  0:15 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \capturelimit\0\g_maxGameClients\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\3\protocol\68\mapname\Q3DM6\sv_privateClients\0\sv_allowDownload\0\bot_minplayers\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:05 Kill: 0 0 20: NooB killed NooB by MOD_SUICIDE
+  0:05 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientBegin: 0
+  0:09 Item: 0 ammo_slugs
+  0:10 Item: 0 ammo_cells
+  0:16 Item: 0 weapon_plasmagun
+  0:23 ShutdownGame:
+  0:23 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\g_maxGameClients\0\capturelimit\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\3\protocol\68\mapname\Q3DM6\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:05 Kill: 0 0 20: NooB killed NooB by MOD_SUICIDE
+  0:05 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientUserinfoChanged: 0 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientBegin: 0
+  0:28 ShutdownGame:
+  0:28 ------------------------------------------------------------
