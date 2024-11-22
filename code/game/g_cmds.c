@@ -740,8 +740,11 @@ void Cmd_Team_f( gentity_t *ent ) {
 	trap_Argv( 1, s, sizeof( s ) );
 
 	SetTeam( ent, s );
-
-	ent->client->switchTeamTime = level.time + 5000;
+	
+	//*************BRAWL************** remove 5 second team change cooldown
+	//ent->client->switchTeamTime = level.time + 5000; original code
+	ent->client->switchTeamTime = level.time;
+	//********************************
 }
 
 

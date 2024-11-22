@@ -6,7 +6,7 @@
 --------------------Configuration: game - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\1584297\AppData\Local\Temp\RSPC64C.tmp" with contents
+Creating temporary file "C:\Users\1584297\AppData\Local\Temp\RSP4301.tmp" with contents
 [
 /nologo /G5 /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "BUILDING_REF_GL" /D "DEBUG" /D "GLOBALRANK" /FR".\Debug/" /Fp".\Debug/game.pch" /YX /Fo".\Debug/" /Fd".\Debug/" /FD /c 
 "C:\ygpip\quake3\brawl\code\game\ai_chat.c"
@@ -43,8 +43,8 @@ Creating temporary file "C:\Users\1584297\AppData\Local\Temp\RSPC64C.tmp" with c
 "C:\ygpip\quake3\brawl\code\game\q_math.c"
 "C:\ygpip\quake3\brawl\code\game\q_shared.c"
 ]
-Creating command line "cl.exe @C:\Users\1584297\AppData\Local\Temp\RSPC64C.tmp" 
-Creating temporary file "C:\Users\1584297\AppData\Local\Temp\RSPC65C.tmp" with contents
+Creating command line "cl.exe @C:\Users\1584297\AppData\Local\Temp\RSP4301.tmp" 
+Creating temporary file "C:\Users\1584297\AppData\Local\Temp\RSP4302.tmp" with contents
 [
 kernel32.lib user32.lib winmm.lib /nologo /base:"0x20000000" /subsystem:windows /dll /incremental:yes /pdb:".\Debug/qagamex86.pdb" /map:".\Debug/qagamex86.map" /debug /machine:I386 /def:".\game.def" /out:"C:\ygpip\quake3\brawl\qagamex86.dll" /implib:".\Debug/qagamex86.lib" 
 .\Debug\ai_chat.obj
@@ -81,7 +81,7 @@ kernel32.lib user32.lib winmm.lib /nologo /base:"0x20000000" /subsystem:windows 
 .\Debug\q_math.obj
 .\Debug\q_shared.obj
 ]
-Creating command line "link.exe @C:\Users\1584297\AppData\Local\Temp\RSPC65C.tmp"
+Creating command line "link.exe @C:\Users\1584297\AppData\Local\Temp\RSP4302.tmp"
 <h3>Output Window</h3>
 Compiling...
 ai_chat.c
