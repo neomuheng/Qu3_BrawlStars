@@ -488,6 +488,8 @@ Let everyone know about a team change
 */
 void BroadcastTeamChange( gclient_t *client, int oldTeam )
 {
+	//*******BRAWL*********** remove team change message
+	return;
 	if ( client->sess.sessionTeam == TEAM_RED ) {
 		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " joined the red team.\n\"",
 			client->pers.netname) );
@@ -614,10 +616,13 @@ void SetTeam( gentity_t *ent, char *s ) {
 	//
 	// decide if we will allow the change
 	//
+
+	//********BRAWL******* allow same team change yippieee
 	oldTeam = client->sess.sessionTeam;
-	if ( team == oldTeam && team != TEAM_SPECTATOR ) {
-		return;
-	}
+	//if ( team == oldTeam && team != TEAM_SPECTATOR ) { original code
+	//	return;
+	//}
+	//******************
 
 	//
 	// execute the team change
