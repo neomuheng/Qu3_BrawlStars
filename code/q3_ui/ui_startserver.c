@@ -93,16 +93,20 @@ typedef struct {
 
 static startserver_t s_startserver;
 
+
+//***********BRAWL********** remove gamemodes other than team deathmatch
 static const char *gametype_items[] = {
-	"Free For All",
+	//"Free For All",
 	"Team Deathmatch",
-	"Tournament",
-	"Capture the Flag",
+	//"Tournament",
+	//"Capture the Flag",
 	0
 };
 
-static int gametype_remap[] = {GT_FFA, GT_TEAM, GT_TOURNAMENT, GT_CTF};
+//static int gametype_remap[] = {GT_FFA, GT_TEAM, GT_TOURNAMENT, GT_CTF}; original code
+static int gametype_remap[] = {GT_TEAM};
 static int gametype_remap2[] = {0, 2, 0, 1, 3};
+//************************************************
 
 // use ui_servers2.c definition
 extern const char* punkbuster_items[];
