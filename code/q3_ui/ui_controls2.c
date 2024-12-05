@@ -125,6 +125,9 @@ typedef struct
 #define ID_JOYTHRESHOLD	40
 //*********---**************************************/
 #define ID_SMOOTHMOUSE	41
+//*********BRAWL********* define alt attack id
+#define ID_SUPER		42
+//***********************
 
 #define ANIM_IDLE		0
 #define ANIM_RUN		1
@@ -225,6 +228,10 @@ typedef struct
 	int					playerWeapon;
 	qboolean			playerChat;
 
+	//************BRAWL*********** add super
+	menuaction_s		super;	
+	//****************************
+
 	menubitmap_s		back;
 	menutext_s			name;
 } controls_t; 	
@@ -267,6 +274,9 @@ static bind_t g_bindings[] =
 	{"+button3", 		"gesture",			ID_GESTURE,		ANIM_GESTURE,	K_MOUSE3,		-1,		-1, -1},
 	{"messagemode", 	"chat",				ID_CHAT,		ANIM_CHAT,		't',			-1,		-1, -1},
 	{"messagemode2", 	"chat - team",		ID_CHAT2,		ANIM_CHAT,		-1,				-1,		-1, -1},
+	//*************************BRAWL********************** add super
+	{"+super",			"super",			ID_SUPER,		ANIM_ATTACK,	K_MOUSE2,		-1,		-1,	-1},
+	//****************************************************
 /************CLEANMOD********remove unneeded features
 	{"messagemode3", 	"chat - target",	ID_CHAT3,		ANIM_CHAT,		-1,				-1,		-1, -1},
 	{"messagemode4", 	"chat - attacker",	ID_CHAT4,		ANIM_CHAT,		-1,				-1,		-1, -1},
@@ -320,7 +330,10 @@ static menucommon_s *g_weapons_controls[] = {
 	(menucommon_s *)&s_controls.lightning,   
 	(menucommon_s *)&s_controls.railgun,          
 	(menucommon_s *)&s_controls.plasma,           
-	(menucommon_s *)&s_controls.bfg,              
+	(menucommon_s *)&s_controls.bfg,      
+	//**********BRAWL********* add super
+	(menucommon_s *)&s_controls.super,
+	//************************
 	NULL,
 };
 
@@ -1430,6 +1443,15 @@ static void Controls_MenuInit( void )
 	s_controls.attack.generic.ownerdraw = Controls_DrawKeyBinding;
 	s_controls.attack.generic.id        = ID_ATTACK;
 
+	//************BRAWL********* add super
+	s_controls.super.generic.type	    = MTYPE_ACTION;
+	s_controls.super.generic.flags     = QMF_LEFT_JUSTIFY|QMF_PULSEIFFOCUS|QMF_GRAYED|QMF_HIDDEN;
+	s_controls.super.generic.callback  = Controls_ActionEvent;
+	s_controls.super.generic.ownerdraw = Controls_DrawKeyBinding;
+	s_controls.super.generic.id        = ID_SUPER;
+	//**************************
+
+
 	s_controls.prevweapon.generic.type	    = MTYPE_ACTION;
 	s_controls.prevweapon.generic.flags     = QMF_LEFT_JUSTIFY|QMF_PULSEIFFOCUS|QMF_GRAYED|QMF_HIDDEN;
 	s_controls.prevweapon.generic.callback  = Controls_ActionEvent;
@@ -1629,6 +1651,9 @@ static void Controls_MenuInit( void )
 	Menu_AddItem( &s_controls.menu, &s_controls.sidestep );
 
 	Menu_AddItem( &s_controls.menu, &s_controls.attack );
+	//*************BRAWL*********** add super
+	Menu_AddItem( &s_controls.menu, &s_controls.super );
+	//*****************************
 	Menu_AddItem( &s_controls.menu, &s_controls.nextweapon );
 	Menu_AddItem( &s_controls.menu, &s_controls.prevweapon );
 	Menu_AddItem( &s_controls.menu, &s_controls.autoswitch );
