@@ -1241,6 +1241,10 @@ typedef struct playerState_s {
 
 #define	BUTTON_ANY			2048			// any key whatsoever
 
+//************BRAWL********* define button for super fire
+#define BUTTON_SUPER		4096
+//**************************
+
 #define	MOVE_RUN			120			// if forwardmove or rightmove are >= MOVE_RUN,
 										// then BUTTON_WALKING should be set
 

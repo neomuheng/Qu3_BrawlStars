@@ -2077,6 +2077,38 @@ static void CG_ShotgunPattern( vec3_t origin, vec3_t origin2, int seed, int othe
 	}
 }
 
+//**********BRAWL***************** shelly super draw
+
+static void CG_SuperShotgunPattern( vec3_t origin, vec3_t origin2, int seed, int otherEntNum ) {
+	int			i;
+	float		r, u;
+	vec3_t		end;
+	vec3_t		forward, right, up;
+	double		accuracyFactor = 1.3;
+
+	// derive the right and up vectors from the forward vector, because
+	// the client won't have any other information
+	VectorNormalize2( origin2, forward );
+	PerpendicularVector( right, forward );
+	CrossProduct( forward, right, up );
+
+	// generate the "random" spread pattern
+	for ( i = 0 ; i < DEFAULT_SHOTGUN_COUNT * 4 ; i++ ) {
+		//*****BRAWL***** change shotgun accuracy
+		//r = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
+		//u = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
+		r = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * accuracyFactor * 16;
+		u = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * accuracyFactor * 16;
+		//***************
+		VectorMA( origin, 8192 * 16, forward, end);
+		VectorMA (end, r, right, end);
+		VectorMA (end, u, up, end);
+
+		CG_ShotgunPellet( origin, end, otherEntNum );
+	}
+}
+//**********************************
+
 /*
 ==============
 CG_ShotgunFire
@@ -2102,6 +2134,30 @@ void CG_ShotgunFire( entityState_t *es ) {
 	}
 	CG_ShotgunPattern( es->pos.trBase, es->origin2, es->eventParm, es->otherEntityNum );
 }
+
+//************BRAWL*************** shelly super draw call method
+
+void CG_SuperShotgunFire( entityState_t *es ) {
+	vec3_t	v;
+	int		contents;
+
+	VectorSubtract( es->origin2, es->pos.trBase, v );
+	VectorNormalize( v );
+	VectorScale( v, 32, v );
+	VectorAdd( es->pos.trBase, v, v );
+	if ( cgs.glconfig.hardwareType != GLHW_RAGEPRO ) {
+		// ragepro can't alpha fade, so don't even bother with smoke
+		vec3_t			up;
+
+		contents = trap_CM_PointContents( es->pos.trBase, 0 );
+		if ( !( contents & CONTENTS_WATER ) ) {
+			VectorSet( up, 0, 0, 8 );
+			CG_SmokePuff( v, up, 32, 1, 1, 1, 0.33f, 900, cg.time, 0, LEF_PUFF_DONT_SCALE, cgs.media.shotgunSmokePuffShader );
+		}
+	}
+	CG_SuperShotgunPattern( es->pos.trBase, es->origin2, es->eventParm, es->otherEntityNum );
+}
+//********************************
 
 /*
 ============================================================================

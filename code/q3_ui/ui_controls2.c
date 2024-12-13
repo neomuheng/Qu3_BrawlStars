@@ -275,7 +275,7 @@ static bind_t g_bindings[] =
 	{"messagemode", 	"chat",				ID_CHAT,		ANIM_CHAT,		't',			-1,		-1, -1},
 	{"messagemode2", 	"chat - team",		ID_CHAT2,		ANIM_CHAT,		-1,				-1,		-1, -1},
 	//*************************BRAWL********************** add super
-	{"+super",			"super",			ID_SUPER,		ANIM_ATTACK,	K_MOUSE2,		-1,		-1,	-1},
+	{"+button12",		"super",			ID_SUPER,		ANIM_ATTACK,	K_MOUSE2,		-1,		-1,	-1},
 	//****************************************************
 /************CLEANMOD********remove unneeded features
 	{"messagemode3", 	"chat - target",	ID_CHAT3,		ANIM_CHAT,		-1,				-1,		-1, -1},

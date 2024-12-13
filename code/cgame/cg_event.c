@@ -948,6 +948,12 @@ void CG_EntityEvent( centity_t *cent, vec3_t position ) {
 		DEBUGNAME("EV_SHOTGUN");
 		CG_ShotgunFire( es );
 		break;
+	//***********BRAWL****** shelly super
+	case EV_SUPERSHOTGUN:
+		DEBUGNAME("EV_SUPERSHOTGUN");
+		CG_SuperShotgunFire( es );
+		break;
+	//**********************
 
 	case EV_GENERAL_SOUND:
 		DEBUGNAME("EV_GENERAL_SOUND");

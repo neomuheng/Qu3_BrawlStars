@@ -372,6 +372,57 @@ void weapon_supershotgun_fire (gentity_t *ent) {
 }
 
 
+void SuperShotgunPattern( vec3_t origin, vec3_t origin2, int seed, gentity_t *ent ) {
+	int			i;
+	float		r, u;
+	vec3_t		end;
+	vec3_t		forward, right, up;
+	int			oldScore;
+	qboolean	hitClient = qfalse;
+	//*****BRAWL***** add variable to effect shotgun accuracy
+	double		accuracyFactor = 1.3;
+	//***************
+
+	// derive the right and up vectors from the forward vector, because
+	// the client won't have any other information
+	VectorNormalize2( origin2, forward );
+	PerpendicularVector( right, forward );
+	CrossProduct( forward, right, up );
+
+	oldScore = ent->client->ps.persistant[PERS_SCORE];
+
+	// generate the "random" spread pattern
+	for ( i = 0 ; i < DEFAULT_SHOTGUN_COUNT * 2 ; i++ ) {
+		//*****BRAWL***** change shotgun accuracy
+		//r = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
+		//u = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * 16;
+		r = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * accuracyFactor * 16;
+		u = Q_crandom( &seed ) * DEFAULT_SHOTGUN_SPREAD * accuracyFactor * 16;
+		//***************
+		VectorMA( origin, 8192 * 16, forward, end);
+		VectorMA (end, r, right, end);
+		VectorMA (end, u, up, end);
+		if( ShotgunPellet( origin, end, ent ) && !hitClient ) {
+			hitClient = qtrue;
+			ent->client->accuracy_hits++;
+		}
+	}
+}
+
+
+void super_weapon_supershotgun_fire (gentity_t *ent) {
+	gentity_t		*tent;
+
+	// send shotgun blast
+	tent = G_TempEntity( muzzle, EV_SUPERSHOTGUN );
+	VectorScale( forward, 4096, tent->s.origin2 );
+	SnapVector( tent->s.origin2 );
+	tent->s.eventParm = rand() & 255;		// seed for spread pattern
+	tent->s.otherEntityNum = ent->s.number;
+
+	SuperShotgunPattern( tent->s.pos.trBase, tent->s.origin2, tent->s.eventParm, ent );
+}
+
 /*
 ======================================================================
 
@@ -821,6 +872,12 @@ FireWeapon
 ===============
 */
 void FireWeapon( gentity_t *ent ) {
+
+	//****BRAWL***** super fire - needed to see what button is pressed
+	usercmd_t	*ucmd;
+	ucmd = &ent->client->pers.cmd;
+	//**************
+
 	if (ent->client->ps.powerups[PW_QUAD] ) {
 		s_quadFactor = g_quadfactor.value;
 	} else {
@@ -860,6 +917,11 @@ void FireWeapon( gentity_t *ent ) {
 		Weapon_LightningFire( ent );
 		break;
 	case WP_SHOTGUN:
+		//*****BRAWL***** shelly super
+		if (ucmd->buttons & BUTTON_SUPER)
+			super_weapon_supershotgun_fire( ent );
+		else
+		//**************
 		weapon_supershotgun_fire( ent );
 		break;
 	case WP_MACHINEGUN:

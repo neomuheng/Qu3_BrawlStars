@@ -1612,7 +1612,11 @@ static void PM_Weapon( void ) {
 	}
 
 	// check for fire
-	if ( ! (pm->cmd.buttons & BUTTON_ATTACK) ) {
+	//*************BRAWL************** super fire
+	//if ( ! (pm->cmd.buttons & BUTTON_ATTACK) ) { original code
+	if ( ! (pm->cmd.buttons & (BUTTON_ATTACK | BUTTON_SUPER)))
+	{
+	//********************************
 		pm->ps->weaponTime = 0;
 		pm->ps->weaponstate = WEAPON_READY;
 		return;
