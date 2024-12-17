@@ -2250,6 +2250,9 @@ void CG_Player( centity_t *cent ) {
 	float			angle;
 	vec3_t			dir, angles;
 #endif
+	//***BRAWL**** self awareness
+	qboolean		thisPlayerIsUs = qtrue;
+	//************
 
 	// the client number is stored in clientNum.  It can't be derived
 	// from the entity number, because a single client may have
@@ -2270,7 +2273,9 @@ void CG_Player( centity_t *cent ) {
 	renderfx = 0;
 	if ( cent->currentState.number == cg.snap->ps.clientNum) {
 		if (!cg.renderingThirdPerson) {
-			renderfx = RF_THIRD_PERSON;			// only draw in mirrors
+			//*****BRAWL***** self awareness
+			//renderfx = RF_THIRD_PERSON;			// only draw in mirrors original code
+			//**************
 		} else {
 			if (cg_cameraMode.integer) {
 				return;
@@ -2321,6 +2326,15 @@ void CG_Player( centity_t *cent ) {
 	legs.renderfx = renderfx;
 	VectorCopy (legs.origin, legs.oldorigin);	// don't positionally lerp at all
 
+	//*******BRAWL****** self awareness
+	if(thisPlayerIsUs && !cg.renderingThirdPerson)
+	{
+		VectorMA( legs.origin, -15, legs.axis[0], legs.origin );		//-towards us, +away from us
+		VectorMA( legs.origin, 0, legs.axis[1], legs.origin );		//left or right
+		VectorMA( legs.origin, 0, legs.axis[2], legs.origin );		//-move down, +move up
+	}
+	//******************
+
 	CG_AddRefEntityWithPowerups( &legs, &cent->currentState, ci->team );
 
 	// if the model failed, allow the default nullmodel to be displayed
@@ -2344,6 +2358,11 @@ void CG_Player( centity_t *cent ) {
 
 	torso.shadowPlane = shadowPlane;
 	torso.renderfx = renderfx;
+	//*********BRAWL******** self awareness
+	if(thisPlayerIsUs && !cg.renderingThirdPerson)
+	{ }
+	else
+	//**********************
 
 	CG_AddRefEntityWithPowerups( &torso, &cent->currentState, ci->team );
 /*****CLEANMOD****remove fields we don't need //original code
@@ -2550,6 +2569,12 @@ void CG_Player( centity_t *cent ) {
 	head.shadowPlane = shadowPlane;
 	head.renderfx = renderfx;
 
+	//*********BRAWL********** self awareness
+	if(thisPlayerIsUs && !cg.renderingThirdPerson)
+	{ }
+	else
+	//************************
+
 	CG_AddRefEntityWithPowerups( &head, &cent->currentState, ci->team );
 
 #ifdef MISSIONPACK
@@ -2561,9 +2586,21 @@ void CG_Player( centity_t *cent ) {
 	//
 	// add the gun / barrel / flash
 	//
+	//**************BRAWL********** self awareness
+	if(thisPlayerIsUs && !cg.renderingThirdPerson)
+	{ }
+	else
+	//*****************************
+
 	CG_AddPlayerWeapon( &torso, NULL, cent, ci->team );
 
 	// add powerups floating behind the player
+
+	//*********BRAWL**************** self awareness
+	if(thisPlayerIsUs && !cg.renderingThirdPerson)
+	{ }
+	else
+	//*****************************
 	CG_PlayerPowerups( cent, &torso );
 }
 
