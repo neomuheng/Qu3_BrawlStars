@@ -445,6 +445,19 @@ void weapon_grenadelauncher_fire (gentity_t *ent) {
 //	VectorAdd( m->s.pos.trDelta, ent->client->ps.velocity, m->s.pos.trDelta );	// "real" physics
 }
 
+//********BRAWL******** dynamike super
+void super_weapon_grenadelauncher_fire (gentity_t *ent) {
+	gentity_t	*m;
+
+	// extra vertical velocity
+	forward[2] += 0.2f;
+	VectorNormalize( forward );
+
+	m = super_fire_grenade (ent, muzzle, forward);
+	m->damage *= s_quadFactor;
+	m->splashDamage *= s_quadFactor;
+}
+//*********************
 /*
 ======================================================================
 
@@ -932,10 +945,14 @@ void FireWeapon( gentity_t *ent ) {
 		}
 		break;
 	case WP_GRENADE_LAUNCHER:
-		weapon_grenadelauncher_fire( ent );
-		//********BRAWL********* fire grenade twice
-		weapon_grenadelauncher_fire( ent );
-		//********-----*********
+		//********BRAWL********* dynamike super
+		if (ucmd->buttons & BUTTON_SUPER) {
+			super_weapon_grenadelauncher_fire( ent );
+		} else { //********BRAWL********* fire grenade twice
+			weapon_grenadelauncher_fire( ent );
+			weapon_grenadelauncher_fire( ent );
+			//**********************
+		}
 		break;
 	case WP_ROCKET_LAUNCHER:
 		Weapon_RocketLauncher_Fire( ent );

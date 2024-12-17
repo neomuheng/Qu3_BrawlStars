@@ -3475,3 +3475,82 @@
   0:02 Item: 0 ammo_rockets
   0:03 ShutdownGame:
   0:03 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\g_maxGameClients\0\capturelimit\0\version\Q3 1.32 win-x86 Oct  7 2002\g_gametype\3\protocol\68\mapname\Q3DM6\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:01 ClientConnect: 1
+  0:01 ClientUserinfoChanged: 1 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientUserinfoChanged: 1 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientUserinfoChanged: 1 n\NooB\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:02 ClientBegin: 1
+  0:03 Kill: 0 0 20: NooB killed NooB by MOD_SUICIDE
+  0:03 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:03 ClientUserinfoChanged: 0 n\NooB\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:03 ClientBegin: 0
+  0:05 ClientUserinfoChanged: 1 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientUserinfoChanged: 1 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientBegin: 1
+  0:16 Item: 0 weapon_rocketlauncher
+  0:27 Kill: 0 1 4: NooB killed NooB by MOD_GRENADE
+  0:32 Item: 1 ammo_cells
+  0:32 Item: 1 ammo_bullets
+  0:32 Item: 1 ammo_rockets
+  0:41 Item: 1 item_quad
+  0:41 Kill: 0 1 4: NooB killed NooB by MOD_GRENADE
+  0:47 Kill: 1 1 20: NooB killed NooB by MOD_SUICIDE
+  0:47 ClientUserinfoChanged: 1 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:47 ClientUserinfoChanged: 1 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:47 ClientBegin: 1
+  0:52 Item: 1 item_health_small
+  0:53 Item: 1 item_health_small
+  0:53 Item: 0 weapon_plasmagun
+  0:53 Item: 1 item_health_small
+  0:53 Kill: 1 0 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  0:54 Item: 1 item_health_small
+  0:54 Item: 1 item_health_small
+  1:05 Item: 0 ammo_cells
+  1:06 Item: 0 item_armor_combat
+  1:07 Item: 0 ammo_rockets
+  1:19 Item: 1 weapon_grenadelauncher
+  1:35 Kill: 1 0 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  1:48 Item: 1 weapon_grenadelauncher
+  1:55 Kill: 1 0 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  2:10 Kill: 0 1 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  2:11 Kill: 1 0 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  2:27 Item: 0 weapon_shotgun
+  2:30 Item: 0 weapon_grenadelauncher
+  2:49 Kill: 1 0 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  2:58 Kill: 0 1 4: NooB killed NooB by MOD_GRENADE
+  3:07 Item: 0 ammo_slugs
+  3:16 Item: 0 ammo_bullets
+  3:43 Kill: 1 0 4: NooB killed NooB by MOD_GRENADE
+  3:54 Item: 0 ammo_shells
+  4:01 Item: 1 item_health
+  4:08 Kill: 1 0 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  4:14 Item: 1 ammo_rockets
+  4:17 Kill: 0 1 5: NooB killed NooB by MOD_GRENADE_SPLASH
+  4:20 ClientUserinfoChanged: 1 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  4:20 ClientUserinfoChanged: 1 n\NooB\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  4:20 ClientBegin: 1
+  4:22 Item: 0 ammo_cells
+  4:29 Item: 1 weapon_grenadelauncher
+  4:30 Kill: 1 0 1: NooB killed NooB by MOD_SHOTGUN
+  4:33 Item: 1 weapon_grenadelauncher
+  4:35 Item: 0 ammo_shells
+  4:35 Item: 0 ammo_rockets
+  4:39 Item: 0 ammo_cells
+  4:55 Kill: 1 0 1: NooB killed NooB by MOD_SHOTGUN
+  5:00 Item: 1 weapon_grenadelauncher
+  5:15 Kill: 1 0 1: NooB killed NooB by MOD_SHOTGUN
+  5:15 Item: 1 weapon_grenadelauncher
+  5:22 Item: 0 item_armor_body
+  5:28 Kill: 0 1 4: NooB killed NooB by MOD_GRENADE
+  5:33 ClientDisconnect: 1
+  5:35 ShutdownGame:
+  5:35 ------------------------------------------------------------
