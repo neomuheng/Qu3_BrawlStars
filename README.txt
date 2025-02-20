@@ -1,3 +1,6 @@
+migrated to Gitea due to network blacklisting at our facility
+https://gitea.com/knelbaker/qu3brawlstars
+
 Quake III Arena GPL source release
 ==================================
 
